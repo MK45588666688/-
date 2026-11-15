@@ -11,7 +11,7 @@ jobs:
       - name: Unzip project
         run: unzip -q yourcoach_flutter.zip
       - uses: actions/setup-java@v4
-        with: { distribution: temurin, java-version: '17' }
+        with: { distribution: temurin, java-version: '21' }
       - uses: subosito/flutter-action@v2
         with: { channel: stable }
       - name: Patch and build
